@@ -6,7 +6,7 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
 
         model = Product
-        fields = ['title', 'description']
+        fields = ['id','title', 'description']
 
 
 class ProductPositionSerializer(serializers.ModelSerializer):
@@ -18,10 +18,11 @@ class ProductPositionSerializer(serializers.ModelSerializer):
 
 
 class StockSerializer(serializers.ModelSerializer):
+
     positions = ProductPositionSerializer(many=True)
 
     class Meta:
-        
+
         model = Stock
         fields = ['positions', 'address']
 
