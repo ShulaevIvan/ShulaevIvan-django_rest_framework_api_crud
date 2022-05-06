@@ -7,8 +7,8 @@ POST {{baseUrl}}/products/
 Content-Type: application/json
 
 {
-  "title": "Огурец3",
-  "description": "огурец тест3"
+  "title": "Помидор",
+  "description": "Помидор тест"
 }
 
 ###
@@ -71,13 +71,13 @@ Content-Type: application/json
   "positions": [
     {
       "product": 2,
-      "quantity": 100,
-      "price": 130.80
+      "quantity": 160,
+      "price": 14.80
     },
     {
       "product": 3,
-      "quantity": 243,
-      "price": 145
+      "quantity": 333,
+      "price": 15
     }
   ]
 }
